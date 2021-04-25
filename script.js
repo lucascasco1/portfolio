@@ -1,3 +1,12 @@
+const enviar = document.querySelector('.enviar');
+if(enviar){
+
+    enviar.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        console.log('click enviadoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+    })
+}
+
 $(document).ready(function(){
     $(window).scroll(function(){
         
