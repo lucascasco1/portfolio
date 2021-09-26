@@ -1,11 +1,3 @@
-const enviar = document.querySelector('.enviar');
-if(enviar){
-
-    enviar.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        console.log('click enviadoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
-    })
-}
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -76,4 +68,13 @@ $(document).ready(function(){
             }
         }
     });
+
+    //scrollBar
+
+    let progress = document.getElementById('progressBar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress. style.height = progressHeight + "%";
+    }
 });
