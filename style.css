@@ -914,6 +914,10 @@ footer span a:hover {
     text-align: center;
 }
 
+.contactForm form .block button:hover{
+    color: #efb810;
+}
+
 .contactForm form input,
 .contactForm form textarea{
     width: 100%;
@@ -944,6 +948,12 @@ footer span a:hover {
     .contactInfo p{
         padding:1em;
         text-align: center;
+    }
+
+    .contactForm form .block button{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
     .contactForm form .block button{
