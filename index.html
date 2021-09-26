@@ -135,29 +135,38 @@
     </section>
 
     <!-- contacto -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contactame</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Gracias por leerme!</div>
-                    <p>A continuación brindo mis redes y un pequeño espacio donde puedas adjuntar tus datos y un mensaje, pregunta, recomendación, etc.
-                    </p>
-
-                </div>
-
-                <div class="column">
-                    <form action="https://formsubmit.co/thunderstruck.lc@gmail.com" method="POST" class="form">
-                        <input type="text" name="name" placeholder="Tu nombre..." required class="name">
-                        <input type="email" name="email" placeholder="Tu mail..." required class="mail">
-                        <textarea type="text" name="mensaje" placeholder="Tu mensaje..." required class="mesagge"></textarea>
-                        <button type="submit" class="button">Enviar</button>
-                   </form>
-                </div>
-
-            </div>
+    <div class="contactWrapper">
+        <div class="contactInfo">
+            <h4>¡Gracias por leerme!</h4>
+            <p>A continuación brindo mis redes y un pequeño espacio donde puedas adjuntar tus datos y un mensaje, pregunta, recomendación, etc.
+            </p>
         </div>
-    </section>
+        <div class="contactForm">
+            <form action="https://formsubmit.co/thunderstruck.lc@gmail.com" method="POST" class="form">
+                <p>
+                    <label>Nombre</label>
+                    <input type="text" name="name" required class="name">
+                </p>
+                <p>
+                    <label>E-mail</label>
+                    <input type="email" name="email" required class="mail">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" required class="asunto">
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea type="text" name="mensaje" rows="3" required class="mesagge"></textarea>
+                </p>
+                <p class="block">
+                    <button type="submit" class="button">Enviar</button>
+                </p>
+           </form>
+        </div>
+        
+        
+    </div>
 
     <!-- footer -->
     <footer class="redes">
